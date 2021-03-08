@@ -1,13 +1,23 @@
+@font-face {
+  font-family: 'TwentytwelveSansG';
+  src: local('TwentytwelveSansG'), url("./fonts/TwentytwelveSansG.woff");
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Medium';
+  src: local('HelveticaNeueCyr-Medium'), url("./fonts/HelveticaNeueCyr-Medium.woff");
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: local('HelveticaNeueCyr-Light'), url("./fonts/HelveticaNeueCyr-Light.woff");
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Roman';
+  src: local('HelveticaNeueCyr-Roman'), url("./fonts/HelveticaNeueCyr-Roman.woff");
+}
+html::-webkit-scrollbar { width: 3px; height: 3px;}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'TwentytwelveSansG', sans-serif;
+  /*font-family: 'HelveticaNeueCyr-Medium', sans-serif;*/
 }

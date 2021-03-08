@@ -1,0 +1,23 @@
+
+.news{
+    color: #ffffff;
+    width: 100%;
+
+}
+.news__list{
+    padding: 100px 0 450px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-gap: 2px;*/
+}
+
+@media (max-width: 992px) {
+    .news__list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .news__list{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,199 @@
+.AnimationScreen{
+    position: absolute;
+    color: #000000;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 100;
+    transition: 1s;
+}
+.hide{
+    transition-delay: 1s;
+    opacity: 0;
+}
+.close{
+    display: none;
+}
+.AnimationScreen h2{
+    position: absolute;
+
+}
+.title{
+    font-size: 64px;
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation-name: titleMove;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    z-index: 110;
+    opacity: 0;
+}
+@keyframes titleMove {
+    0%{
+        opacity: 0;
+    }
+    15%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.moveBox{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.onix{
+    bottom: 0;
+    left: 0;
+    transform: translateX(200%) translateY(-30%);
+    width: 419px;
+    height: 479px;
+    background-image: url("./pattern/onix.jpg");
+    z-index: 101;
+    animation-name: onixMove;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes onixMove {
+    0%{
+        transform: translateX(200%) translateY(-30%);
+    }
+    30%{
+        transform: translateX(0) translateY(-30%);
+    }
+    60%{
+        transform: translateX(0) translateY(-30%);
+    }
+    100%{
+        transform: translateX(0) translateY(-300%);
+    }
+}
+.marbleWhite{
+    top: 0;
+    left: 0;
+    transform: translateX(0) translateY(-100%);
+    width: 353px;
+    height: 487px;
+    background-image: url("./pattern/whiteMarble.jpg");
+    z-index: 103;
+    animation-name: marbleWhiteMove;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes marbleWhiteMove {
+    0%{
+        transform: translateX(0) translateY(-100%);
+    }
+    30%{
+        transform: translateX(0) translateY(-20%);
+    }
+    60%{
+        transform: translateX(0) translateY(-20%);
+    }
+    100%{
+        transform: translateX(-100%) translateY(-20%);
+    }
+}
+.marbleBlack{
+    left: 0;
+    bottom: 0;
+    width: 587px;
+    height: 293px;
+    transform: translateX(10%) translateY(-100%) rotate(-90deg);
+    background-image: url("./pattern/blackMarble.jpg");
+    z-index: 104;
+    animation-name: marbleBackMove;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes marbleBackMove {
+    0%{
+        transform: translateX(10%) translateY(100%) rotate(-90deg);
+    }
+    30%{
+        transform: translateX(10%) translateY(0) rotate(-90deg);
+    }
+    60%{
+        transform: translateX(10%) translateY(0) rotate(-90deg);
+    }
+    100%{
+        transform: translateX(350%) translateY(0) rotate(-90deg);
+    }
+}
+.concrete{
+    top: 0;
+    right: 0;
+    width: 596px;
+    height: 894px;
+    transform: translateX(20%) translateY(-100%);
+    background-image: url("./pattern/concrete.jpg");
+    z-index: 102;
+    animation-name: concreteMove;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes concreteMove {
+    0%{
+        transform: translateX(20%) translateY(-100%);
+    }
+    30%{
+        transform: translateX(20%) translateY(-50%);
+    }
+    60%{
+        transform: translateX(20%) translateY(-50%);
+    }
+    100%{
+        transform: translateX(20%) translateY(110%);
+    }
+}
+.logo{
+    margin: 10px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 61px;
+    height: 60px;
+    background-image: url('./pattern/LogoBlack.svg');
+    z-index: 110;
+    animation-name: logoMove;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes logoMove {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.line{
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    width: 300px;
+    height: 2px;
+    background-color: #D8B166;
+    margin-top: 40px;
+
+}
