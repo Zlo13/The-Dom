@@ -1,29 +1,10 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import classes from './AnimationScreen.module.css'
 
 const AnimationScreen = () => {
 
-  const [cls, setCls] = useState([classes.AnimationScreen])
-
-  useEffect(() => {
-    setTimeout(()=>{
-      setCls([
-          ...cls,
-        classes.hide
-      ])
-
-    },5000)
-    setTimeout(()=>{
-      setCls([
-          ...cls,
-        classes.close
-      ])
-    },6000)
-  },[])
-
-
   return(
-    <div className={cls.join(' ')}>
+    <div className={classes.AnimationScreen}>
 
       <div className={classes.logo}>
         <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">

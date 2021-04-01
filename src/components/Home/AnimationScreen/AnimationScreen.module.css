@@ -1,20 +1,24 @@
 .AnimationScreen{
     position: absolute;
-    display: block;
+    /*display: block;*/
     color: #000000;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #ffffff;
     z-index: 100;
-    transition: 1s;
+    /*transition: 1s;*/
     --animation: 5s linear forwards;
 
+    animation-delay: 5s;
+    animation-name: animationScreen;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
 }
-.hide{
-    opacity: 0;
-}
-.close{
-    display: none;
+
+@keyframes animationScreen {
+    from{opacity: 1;}
+    to{opacity: 0; visibility: hidden;}
 }
 
 /*animation elements*/
